@@ -10,11 +10,11 @@ if __name__=="__main__":
     threads = 40
     data_folder = f'/arc/project/st-spakpour-1/news_project_data/'
 
-    fastqc_folder = f'/outputs/qc_results/fastqc_{data_folder.split("/")[-1]}'
-    multiqc_folder = f'/outputs/qc_results/multiqc_{data_folder.split("/")[-1]}'
+    fastqc_folder = f'outputs/qc_results/fastqc'
+    multiqc_folder = f'outputs/qc_results/multiqc'
 
 
-    if f'fastqc_{data_folder.split("/")[-1]}' not in os.listdir("qc_results"):
+    if f'fastqc' not in os.listdir("outputs/qc_results"):
         os.mkdir(fastqc_folder)
         os.mkdir(multiqc_folder)
 
